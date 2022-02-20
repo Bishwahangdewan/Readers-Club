@@ -1,11 +1,17 @@
 import React from 'react';
 
 import Header from '../../Components/Header/Header.component';
+import Showcase from '../../Components/Showcase/Showcase.component';
 
 const HomePage = () => {
     return (
-        <div className="lg:container mx-auto pt-5">
-            <Header />
+        <div>
+            <div className="top">
+                <div className="lg:container mx-auto pt-5">
+                    <Header />
+                    <Showcase />
+                </div>
+            </div>
         </div>
     )
 }
