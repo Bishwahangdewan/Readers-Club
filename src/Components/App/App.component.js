@@ -1,9 +1,16 @@
 import React from 'react';
 
+import { Routes, Route } from 'react-router-dom';
+
+//import Components
+import HomePage from '../../Pages/HomePage/HomePage.pages';
+
 const App = () => {
     return (
         <div>
-            <p className="font-bold">App</p>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+            </Routes>
         </div>
     )
 }
